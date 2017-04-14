@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">D&amp;D 3.5 Character</string>
+    <string name="character_details_info">Character Details</string>
+    <string name="backToCharSelect">Char Select Screen</string>
+</resources>
