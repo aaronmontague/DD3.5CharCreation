@@ -3,6 +3,7 @@ package com.example.grendal.dd35charcreation;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -17,8 +18,10 @@ public class CharacterDetails extends AppCompatActivity {
         setContentView(R.layout.activity_character_details);
 
         String characterName = getIntent().getStringExtra("charName");
-        Toast.makeText(this,characterName,Toast.LENGTH_SHORT).show();
 
+        //Set Char Name into textview - By Aaron Montague 14 Apr 2017
+        TextView tvCharName = (TextView)findViewById(R.id.currentChar);
+        tvCharName.setText(characterName);
     }
 
     public void goBacktoCharSelection(View view){
